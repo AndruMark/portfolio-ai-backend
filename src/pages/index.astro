@@ -1,0 +1,32 @@
+Set-Content -Path "src\pages\index.astro" -Value @'
+---
+import '../styles/global.css';
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jose Andres Markiewicz | AI Backend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#FAFAFA] text-[#111827] min-h-screen flex items-center justify-center p-6 font-['Inter',sans-serif]">
+    <main class="max-w-md w-full border border-gray-200 bg-white p-8 rounded-xl shadow-sm text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 rounded-full text-xs font-['JetBrains_Mono',monospace] text-[#6B7280] mb-6">
+        <span class="w-2 h-2 rounded-full bg-[#2563EB] animate-pulse"></span>
+        Empty but Live &bull; Infrastructure Online
+      </div>
+      <h1 class="text-2xl font-bold font-['JetBrains_Mono',monospace] tracking-tight mb-2">
+        Jose Andres Markiewicz
+      </h1>
+      <p class="text-sm text-[#6B7280] mb-6">
+        AI Backend Engineer &bull; Production LLM Pipelines
+      </p>
+      <div class="text-xs text-gray-400 font-['JetBrains_Mono',monospace]">
+        Stack: Astro + Tailwind CSS | Edge Deployed
+      </div>
+    </main>
+  </body>
+</html>
+'@ -Encoding utf8
